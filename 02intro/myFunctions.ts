@@ -6,7 +6,7 @@ function addTwo(num: number): number {
 addTwo(3);
 
 
-function getUpper(str: string) {
+function getUpper(str: string): string {
     return str.toUpperCase();
 }
 

@@ -9,7 +9,7 @@ const rgb: [number, number, number] = [255, 344, 66];
 
 type User = [number, string]
 const newUser: User = [12, ''];
-newUser.push('123');
+newUser.push('123');  // ambigious statement
 
 
 

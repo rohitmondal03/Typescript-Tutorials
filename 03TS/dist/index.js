@@ -35,4 +35,13 @@ class User {
         console.log('Token deleted');
     }
 }
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamilty = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}
 const rohit = new User("r@r", "rohit");

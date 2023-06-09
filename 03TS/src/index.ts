@@ -21,7 +21,7 @@
 class User {
     readonly city: string = "Raipur";
 
-    private _courseCount = 1;
+    protected _courseCount = 1;
 
     constructor(
         public email: string,
@@ -47,9 +47,18 @@ class User {
     }
 
     private deleteToken() {
-        console.log('Token deleted');   
+        console.log('Token deleted');
     }
 
+}
+
+
+class SubUser extends User {
+    isFamilty: boolean = true;
+
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
 }
 
 

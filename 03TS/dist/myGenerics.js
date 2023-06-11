@@ -23,3 +23,17 @@ function getSearchProducts(products) {
 const getSearchProductsArrow = (products) => {
     return products[3];
 };
+function anotherFunction(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo,
+    };
+}
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addtoCart(products) {
+        this.cart.push(products);
+    }
+}
